@@ -1,4 +1,4 @@
-# FrontendMCGA
+# FrontendMCGALN
 ## Este proyecto fue creado con Vite. Es una aplicación de React que utiliza el contexto de React para manejar el estado global.
 
 ## Librerias
