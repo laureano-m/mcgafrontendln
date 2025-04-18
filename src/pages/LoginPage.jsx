@@ -30,7 +30,7 @@ const LoginPage = () => {
   return (
     <div className='divForm'>
       <div>
-        <Title word1="Iniciar" word2="Sesión"></Title>
+        <Title word1="Iniciar Sesión"></Title>
         <form className='form' onSubmit={onSubmit}>
           {
             signinErrors.length > 0 && <div className='errorsBack'>{signinErrors[0]}</div>

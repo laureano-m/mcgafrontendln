@@ -31,7 +31,7 @@ const RegisterPage = () => {
   return (
     <div className='divForm'>
       <div>
-        <Title word1="REGIS" word2="TRATE"></Title>
+        <Title word1="Registrate"></Title>
         <form className='form' onSubmit={onSubmit}>
           {
             registerErrors.length > 0 && <div className='errorsBack'>{registerErrors[0]}</div>

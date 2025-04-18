@@ -1,0 +1,17 @@
+/* Esta clase esta en ProductsPage */
+.mainProducts {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  min-height: 80vh;
+  margin: 0.5rem 0;
+  padding: 2rem;
+  gap: 2rem;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  background-color: #3794ff;
+  border-radius: 1rem;
+  /* font-family: "Montserrat", sans-serif; */
+  /* box-shadow: 0 0 1rem #000000; */
+  /* Ajusta el desenfoque y el color según sea necesario */
+}

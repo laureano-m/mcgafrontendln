@@ -1,0 +1,97 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 4rem;
+  padding: 1rem 2rem;
+  background: #014b93;
+}
+
+.userNav {
+  display: flex;
+  align-items: center;
+}
+
+.iconUserNav {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-left: 2rem;
+}
+
+.userNameNav {
+  text-align: center;
+  margin-left: 1rem;
+  top: 0.5rem;
+  left: 1rem;
+  font-size: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: 0.2s ease-in-out;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+nav a:hover {
+  color: #7c7c7c;
+}
+
+nav ul a:hover::after {
+  content: "";
+  width: 30%;
+  height: 3px;
+  background: #7c7c7c;
+  position: absolute;
+  bottom: -1px;
+  left: 1px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+}
+
+nav ul li {
+  position: relative;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+nav h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.link-img {
+  height: 100%;
+}
+
+.link-img img {
+  height: 100%;
+  border-radius: 0.5rem;
+}
+
+.navIcon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) { 
+  .navWord {
+    display: none;
+  }
+
+  .navIcon {
+    display: block;
+  }
+
+  .iconUserNav, .userNameNav {
+    display: none;
+  }
+}

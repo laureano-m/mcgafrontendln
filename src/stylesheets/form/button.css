@@ -1,0 +1,51 @@
+.btnForm {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 1.063rem;
+    border-radius: 31.25rem;
+    overflow: hidden;
+    background: #0087E4;
+    color: ghostwhite;
+}
+
+.btnForm span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+}
+
+.btnForm:hover span {
+    color: black;
+}
+
+.btnForm::before,
+.btnForm::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.btnForm::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.btnForm:hover::before {
+    transform: translate3d(100%, 0, 0);
+}
